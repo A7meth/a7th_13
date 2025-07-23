@@ -19,13 +19,13 @@ int	ft_str_is_lowercase(char *str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-		return (1);
+			return (1);
 		}
 		else
 		{
-		return (0);
+			return (0);
 		}
-	i ++;
+		i ++;
 	}
 	return (i);
 }
