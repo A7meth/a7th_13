@@ -20,6 +20,11 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		i ++;
 	}
+	while (i < n)
+	{
+	dest[i] = '\0'; 
+	i ++;
+	}
 	return (dest);
 }
 
@@ -29,9 +34,9 @@ int	main()
 {
 	int	n = 3;
 	char	src[] = "ahmed";
-	char	dest[n];
+	char	dest[100];
 
 	ft_strncpy(dest, src, n);
 	printf("%s\n",dest);
-
+	return (0);
 }
