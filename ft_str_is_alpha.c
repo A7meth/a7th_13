@@ -34,5 +34,5 @@ int	main()
 	char	str1[] ="9739147gegw";
 
 	printf("%d \n", ft_str_is_alpha(str));
-	 printf("%d \n", ft_str_is_alpha(str1));
+	printf("%d \n", ft_str_is_alpha(str1));
 }
