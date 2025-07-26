@@ -17,17 +17,13 @@ int	ft_str_is_lowercase(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			return (1);
-		}
-		else
+		if (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
 			return (0);
 		}
 		i ++;
 	}
-	return (i);
+	return (1);
 }
 
 #include <stdio.h>
