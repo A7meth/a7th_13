@@ -19,15 +19,11 @@ int	ft_str_is_numeric(char *str)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			return (1);
-		}
-		else
-		{
 			return (0);
 		}
 		i ++;
 	}
-	return (i);
+	return (1);
 }
 
 #include <stdio.h>
