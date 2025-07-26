@@ -17,17 +17,13 @@ int	ft_str_is_uppercase(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			return (1);
-		}
-		else
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
 		{
 			return (0);
 		}
 		i ++;
 	}
-	return (i);
+	return (1);
 }
 
 #include <stdio.h>
